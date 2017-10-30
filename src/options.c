@@ -687,10 +687,10 @@ void options_read_cmdline(struct options_t *s, int *argc, char *argv[])
       exit( EXIT_FAILURE );
     }
 
-  if (realtime_opt.isset && (wsnet1_mode_opt.isset || wsnet2_mode_opt.isset))
+  if ((realtime_opt.isset || s->realtime) && (wsnet1_mode_opt.isset || wsnet2_mode_opt.isset))
     {
       OPT_WARNING("\n==================================================\n");
-      OPT_WARNING(" wsnet mode cannot be used with the realtime option\n");
+      OPT_WARNING(" wsnet mode cannot be used with the realtime option; deactivated\n");
       OPT_WARNING("\n==================================================\n");
        s->realtime = 0;
     }
