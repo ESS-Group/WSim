@@ -2,7 +2,7 @@ if BUILD_EZ430CHRONOS
 
 bin_PROGRAMS=wsim-ez430chronos
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 EZ430CHRONOS_MCU= ../../arch/msp430/libcc430f6137.a
 EZ430CHRONOS_DEV= ../../devices/led/libled.a \

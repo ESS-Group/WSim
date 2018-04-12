@@ -1,7 +1,7 @@
 
 noinst_LIBRARIES = libgdb.a
 
-INCLUDES = -I$(top_srcdir)
+AM_CPPFLAGS = -I$(top_srcdir)
 
 libgdb_a_SOURCES = \
 	libgdb.h                \

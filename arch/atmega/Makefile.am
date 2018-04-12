@@ -4,7 +4,7 @@ noinst_LIBRARIES = 		\
 	libatmega128.a		\
 	libatmega128l.a
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 ATMEGA= atmega128_models.h		                          \
 	atmega128.h                   atmega128.c                 \

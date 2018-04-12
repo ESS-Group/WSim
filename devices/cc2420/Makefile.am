@@ -1,7 +1,7 @@
 
 noinst_LIBRARIES=libcc2420.a
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 CC2420=	cc2420_dev.c	   \
 	cc2420_state.c     \

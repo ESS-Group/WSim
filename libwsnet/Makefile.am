@@ -1,7 +1,7 @@
 
 noinst_LIBRARIES=libwsnet.a
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 libwsnet_a_SOURCES= 		\
 		libwsnet.h	\

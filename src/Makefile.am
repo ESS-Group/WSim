@@ -1,7 +1,7 @@
 
 noinst_LIBRARIES=libwsim.a
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 libwsim_a_SOURCES=			\
 	mainworker.c mainworker.h    	\

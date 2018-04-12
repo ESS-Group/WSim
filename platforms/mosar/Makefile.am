@@ -2,7 +2,7 @@ if BUILD_MOSAR
 
 bin_PROGRAMS=wsim-mosar
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 MOSAR_MCU= ../../arch/msp430/libmsp430f2274.a
 MOSAR_DEV= ../../devices/led/libled.a			\

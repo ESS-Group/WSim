@@ -1,7 +1,7 @@
 
 noinst_LIBRARIES=libselect.a
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 libselect_a_SOURCES=                       		\
 	libselect_fifomem.h libselect_fifomem.c  	\

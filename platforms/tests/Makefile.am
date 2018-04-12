@@ -2,7 +2,7 @@ if BUILD_TESTS
 
 bin_PROGRAMS=wsim-msp135 wsim-msp1611 wsim-msp1611-2 wsim-msp1611-3
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 MCU_135=../../arch/msp430/libmsp430f135.a
 MCU_1611=../../arch/msp430/libmsp430f1611.a

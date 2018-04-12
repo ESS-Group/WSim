@@ -2,7 +2,7 @@
 
 noinst_LIBRARIES = libelf.a
 
-INCLUDES = -I$(top_srcdir) 
+AM_CPPFLAGS = -I$(top_srcdir) 
 
 if BUILD_GNUBFD
 RDRSOURCES=libelf_bfd.c

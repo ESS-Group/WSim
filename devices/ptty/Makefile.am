@@ -1,7 +1,7 @@
 
 noinst_LIBRARIES=libptty.a
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 PTTY=   ptty_dev.h         \
 	ptty_dev.c

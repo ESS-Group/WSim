@@ -1,6 +1,6 @@
 noinst_LIBRARIES=libbargraph.a
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 libbargraph_a_SOURCES=			\
 	bargraph_dev.h bargraph_dev.c	\

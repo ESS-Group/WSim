@@ -2,7 +2,7 @@ if BUILD_TELOSB
 
 bin_PROGRAMS=wsim-telosb
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 TELOSB_MCU= ../../arch/msp430/libmsp430f1611.a
 TELOSB_DEV= ../../devices/led/libled.a			\

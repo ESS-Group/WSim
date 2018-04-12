@@ -1,6 +1,6 @@
 noinst_LIBRARIES=libat45db041b.a
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 AT45DB=at45db_dev.h at45db_dev.c
 

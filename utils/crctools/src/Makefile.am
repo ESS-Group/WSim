@@ -1,7 +1,7 @@
 
 bin_PROGRAMS=wcrc
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 wcrc_SOURCES=main.c 
 

@@ -2,7 +2,7 @@ if BUILD_ICLBSN
 
 bin_PROGRAMS=wsim-iclbsn wsim-iclbsn2 wsim-iclbsn3
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 ICLBSN_MCU1= ../../arch/msp430/libmsp430f149.a
 ICLBSN_MCU2= ../../arch/msp430/libmsp430f1611.a

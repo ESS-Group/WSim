@@ -2,7 +2,7 @@
 noinst_LIBRARIES = \
 	libmcucommon.a
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 COMMON_HEADER=          \
 	debug.h    	\

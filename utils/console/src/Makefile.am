@@ -1,7 +1,7 @@
 
 bin_PROGRAMS=wconsole
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 wconsole_SOURCES=main.c	        \
 	fifo.h fifo.c	        \

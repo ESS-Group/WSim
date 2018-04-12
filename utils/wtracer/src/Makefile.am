@@ -1,7 +1,7 @@
 
 bin_PROGRAMS=wtracer
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 wtracer_SOURCES=main.c              \
 	tracer.h tracer.c           \

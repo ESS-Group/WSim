@@ -2,7 +2,7 @@ if BUILD_WISENODE
 
 bin_PROGRAMS=wsim-wisenode
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 WISENODE_MCU= ../../arch/msp430/libmsp430f1611.a
 WISENODE_DEV= ../../devices/led/libled.a		\

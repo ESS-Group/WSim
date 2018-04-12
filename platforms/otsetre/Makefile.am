@@ -2,7 +2,7 @@ if BUILD_OTSETRE
 
 bin_PROGRAMS=wsim-otsetre
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 OTSETREMCU= ../../arch/msp430/libmsp430f149.a
 OTSETREDEV= ../../devices/led/libled.a      	\

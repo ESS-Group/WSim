@@ -2,7 +2,7 @@ if BUILD_SENSLAB
 
 bin_PROGRAMS=wsim-senslabv13b wsim-senslabv14
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 SENSLAB_MCU= ../../arch/msp430/libmsp430f1611.a
 SENSLAB_DEV= ../../devices/led/libled.a			\

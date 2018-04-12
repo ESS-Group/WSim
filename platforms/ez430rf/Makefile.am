@@ -2,7 +2,7 @@ if BUILD_EZ430RF
 
 bin_PROGRAMS=wsim-ez430rf
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 EZ430RF_MCU= ../../arch/msp430/libmsp430f2274.a
 EZ430RF_DEV= ../../devices/led/libled.a			\

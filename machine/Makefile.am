@@ -2,7 +2,7 @@
 
 noinst_LIBRARIES = libmachine.a
 
-INCLUDES = -I$(top_srcdir) 
+AM_CPPFLAGS = -I$(top_srcdir) 
 
 libmachine_a_SOURCES = 			\
 	machine.c machine.h		\

@@ -2,7 +2,7 @@ if BUILD_WSN430
 
 bin_PROGRAMS=wsim-wsn430
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 WSN430_MCU= ../../arch/msp430/libmsp430f1611.a
 WSN430_DEV= ../../devices/led/libled.a			\

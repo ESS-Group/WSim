@@ -2,7 +2,7 @@ if BUILD_MCUGEN
 
 noinst_LIBRARIES = libmcugen.a
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 MCUGEN= mcugen.h mcugen.c	\
 	mcugen_mac.c mcugen_jtag.c

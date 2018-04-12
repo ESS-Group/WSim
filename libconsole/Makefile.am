@@ -1,7 +1,7 @@
 
 noinst_LIBRARIES = libconsole.a
 
-INCLUDES = -I$(top_srcdir)
+AM_CPPFLAGS = -I$(top_srcdir)
 
 libconsole_a_SOURCES =          \
 	console_utils.h         \

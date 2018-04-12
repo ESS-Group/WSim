@@ -2,7 +2,7 @@ if BUILD_POWWOW
 
 bin_PROGRAMS=wsim-powwow
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 MCU=../../arch/msp430/libmsp430f1612.a
 

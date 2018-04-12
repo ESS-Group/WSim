@@ -1,7 +1,7 @@
 
 noinst_LIBRARIES=libgui.a
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 libgui_a_CFLAGS=
 libgui_a_SOURCES=ui.h ui.cpp qt_main.cpp mainwindow.cpp mainwindow.h moc_mainwindow.cpp \

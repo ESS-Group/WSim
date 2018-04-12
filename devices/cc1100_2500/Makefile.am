@@ -1,7 +1,7 @@
 
 noinst_LIBRARIES=libcc1100.a libcc2500.a libcc1101mm.a
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 CC1100_2500=	cc1100_2500_dev.c       cc1100_2500_dev.h         \
 		cc1100_2500_globals.h   cc1100_2500_internals.h   \

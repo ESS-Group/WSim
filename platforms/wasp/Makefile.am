@@ -2,7 +2,7 @@ if BUILD_WASP
 
 bin_PROGRAMS=wsim-wasp wsim-waspx
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 WASP_MCU= ../../arch/msp430/libmsp430f1611.a
 

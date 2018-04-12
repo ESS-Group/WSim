@@ -2,7 +2,7 @@ if BUILD_MCUGENP
 
 bin_PROGRAMS=wsim-mcugen
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 MCU=../../arch/mcugen/libmcugen.a
 

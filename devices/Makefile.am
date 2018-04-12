@@ -23,7 +23,7 @@ SUBDIRS = 		\
 
 noinst_LIBRARIES= libdevices.a
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 libdevices_a_SOURCES= devices.c devices.h devices_fd.h
 

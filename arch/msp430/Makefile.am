@@ -11,7 +11,7 @@ noinst_LIBRARIES = \
 	libmsp430f2274.a	\
 	libcc430f6137.a
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 MSPSRC= 				             		\
 	msp430.h             	    msp430.c	     		\

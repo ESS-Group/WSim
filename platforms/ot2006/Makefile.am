@@ -2,7 +2,7 @@ if BUILD_OT2006
 
 bin_PROGRAMS=wsim-ot2006
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 OT2006MCU= ../../arch/msp430/libmsp430f449.a
 OT2006DEV= ../../devices/led/libled.a		\

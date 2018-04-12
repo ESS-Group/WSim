@@ -6,7 +6,7 @@ if BUILD_PTTY
 EXTRADEV= ../../devices/ptty/libptty.a
 endif
 
-INCLUDES=-I$(top_srcdir)
+AM_CPPFLAGS=-I$(top_srcdir)
 
 MICA2MCU= ../../arch/atmega/libatmega128l.a
 MICA2DEV= ../../devices/led/libled.a			\
