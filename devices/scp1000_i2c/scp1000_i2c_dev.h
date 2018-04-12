@@ -36,7 +36,7 @@
 
 /* data */
 struct scp1000_i2c_t {
-  uint8_t registers[0xFF]; /* registers                            */
+  uint8_t registers[0xFF+1]; /* registers                            */
   uint8_t SCL_last; /* last clock state                     */
   uint8_t SDA_last; /* last dataline state                  */
   uint8_t SCL; /* current clock state                  */

@@ -449,7 +449,7 @@ void msp430_uscia0_write(uint16_t UNUSED addr, int8_t UNUSED val)
              MCU.sfr.ifg2.b.uca0rxifg         = 0; 
 	     MCU.sfr.ifg2.b.uca0txifg         = 1; 
 #endif
-#ifdef defined(__msp430_have_new_uscia)
+#ifdef __msp430_have_new_uscia
              MCU.uscia0.ucaxifg.b.ucrxifg     = 0;
              MCU.uscia0.ucaxifg.b.uctxifg     = 1;
 #endif
