@@ -35,7 +35,7 @@
 #define DEFAULT_WSENS_MODE         WS_MODE_WSNET0
 #define DEFAULT_SERVER_IP          "127.0.0.1"
 #define DEFAULT_SERVER_PORT        9998
-#define DEFAULT_MULTICAST_IP       "224.0.0.1"
+#define DEFAULT_MULTICAST_IP       "127.0.0.1"
 #define DEFAULT_MULTICAST_PORT     9999
 #define DEFAULT_NODE_ID            1
 #define DEFAULT_REALTIME           1

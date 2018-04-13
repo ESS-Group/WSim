@@ -343,6 +343,7 @@ int worldsens1_c_connect(char *srv_addr, uint16_t srv_port, char *mul_addr, uint
       addr.sin_addr.s_addr = INADDR_ANY;
 	
       /* Allow several bindings */
+      /*
       if (setsockopt(WSENS_MULTICAST, SOL_SOCKET, SO_REUSEADDR, (void*)&on, sizeof(on)) != 0 ) 
 	{
 	  ERROR("* =================================================\n");
@@ -352,9 +353,11 @@ int worldsens1_c_connect(char *srv_addr, uint16_t srv_port, char *mul_addr, uint
 	  close(WSENS_MULTICAST);
 	  return -1;
 	}
+	*/
 	
 #if !defined(LINUX) && !defined(__CYGWIN__) && !defined(_WIN32)
       /* Allow several bindings */
+      /*
       if (setsockopt(WSENS_MULTICAST, SOL_SOCKET, SO_REUSEPORT, &on, sizeof(on)) != 0 ) 
 	{
 	  ERROR("* =================================================\n");
@@ -364,6 +367,7 @@ int worldsens1_c_connect(char *srv_addr, uint16_t srv_port, char *mul_addr, uint
 	  close(WSENS_MULTICAST); 
 	  return -1; 
 	} 
+	*/
 #endif
 	
       /* Bind */
@@ -378,6 +382,7 @@ int worldsens1_c_connect(char *srv_addr, uint16_t srv_port, char *mul_addr, uint
 	}
 	
       /* Join */
+      /*
 #if defined(_WIN32)
       if ((mreq.imr_multiaddr.s_addr = inet_addr(mul_addr)) == INADDR_NONE )
 #else
@@ -405,6 +410,7 @@ int worldsens1_c_connect(char *srv_addr, uint16_t srv_port, char *mul_addr, uint
 
       WSNET_DBG("WSNet:connect:ok, registering fd %d\n",WSENS_MULTICAST);
       assert(libselect_fd_register(WSENS_MULTICAST, SIG_WORLDSENS_IO) != -1);
+      */
     }
   return ret_connect;
 }

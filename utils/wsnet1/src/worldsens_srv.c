@@ -23,7 +23,7 @@
 
 uint16_t  g_lport                  = 9998;
 uint16_t  g_mport                  = 9999;
-char     *g_maddr                  = "224.0.0.1";
+char     *g_maddr                  = "127.0.0.1";
 char     *g_saddr                  = "localhost";
 
 uint32_t  WORLDSENS_SYNCH_PERIOD   =   500000000; /* default to 0.5 second */
